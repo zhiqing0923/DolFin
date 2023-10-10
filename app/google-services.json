@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "277815415076",
+    "firebase_url": "https://dolfinexpensestrackerapp-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dolfinexpensestrackerapp",
+    "storage_bucket": "dolfinexpensestrackerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277815415076:android:ad8e04ce5f40cbfe69e3b1",
+        "android_client_info": {
+          "package_name": "com.example.dolfin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NV3LnUCWbRBnHySPlHqWX3EuaY8Qatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277815415076:android:0b451d59d58859f769e3b1",
+        "android_client_info": {
+          "package_name": "com.example.dolfin_expenese_tracker_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277815415076-spb7c731cp61cerq5b7v7fpd1p0j3j8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dolfin_expenese_tracker_app",
+            "certificate_hash": "8f255088bf8a947e4898965d0f6bb43d247b600a"
+          }
+        },
+        {
+          "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NV3LnUCWbRBnHySPlHqWX3EuaY8Qatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277815415076:android:7887de00cbedeec269e3b1",
+        "android_client_info": {
+          "package_name": "com.example.dolfinloginsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NV3LnUCWbRBnHySPlHqWX3EuaY8Qatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277815415076:android:478a38d0339960f369e3b1",
+        "android_client_info": {
+          "package_name": "wia2007.example.madexpensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NV3LnUCWbRBnHySPlHqWX3EuaY8Qatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277815415076-bj8nhqcr35hqldmshlvvtjufmc1q42ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

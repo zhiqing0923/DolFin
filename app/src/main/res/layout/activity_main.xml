@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D3D3D3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IVBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginsignupbackground" />
+
+    <ImageView
+        android:id="@+id/IVBackground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loginsignupbackground2" />
+
+    <TextView
+        android:id="@+id/TVLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/IVBackground2" />
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#D3D3D3"
+        android:ems="14"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Enter your username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#8A8A8A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVEmail" />
+
+    <TextView
+        android:id="@+id/TVPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#D3D3D3"
+        android:ems="14"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#8A8A8A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPassword" />
+
+    <TextView
+        android:id="@+id/TVForgotPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Forgot Password?"
+        android:textColor="#707070"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword" />
+
+    <ImageView
+        android:id="@+id/IVBtn"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVForgotPsw"
+        app:srcCompat="@drawable/border" />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/inter_medium"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVForgotPsw" />
+
+    <TextView
+        android:id="@+id/TVOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Or login with"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVBtn" />
+
+    <ImageView
+        android:id="@+id/IVLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="-48dp"
+        app:layout_constraintEnd_toStartOf="@+id/TVOr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVBtn"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/IVLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-48dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVOr"
+        app:layout_constraintTop_toBottomOf="@+id/IVBtn"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/IVGoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVOr"
+        app:srcCompat="@drawable/google_logo" />
+
+    <TextView
+        android:id="@+id/TVRegisterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Register here"
+        android:textColor="#015794"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVBtn" />
+
+    <TextView
+        android:id="@+id/TVmsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Don't have an account yet?"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/TVRegisterAcc"
+        app:layout_constraintTop_toBottomOf="@+id/IVBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testActivity">
+
+    <ImageView
+        android:id="@+id/blueblackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bluebackground" />
+
+    <TextView
+        android:id="@+id/addIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Edit Income"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueblackground" />
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addIncome"
+        app:srcCompat="@drawable/previousicon" />
+
+    <ImageView
+        android:id="@+id/IVWhiteBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="1000dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whitebackground" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="195dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="NAME"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueblackground" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border3"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dip"
+        android:hint ="name"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border3"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="day / month / year"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dip"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/inputAmount"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="AMOUNT"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <EditText
+        android:id="@+id/inputAmount"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border3"
+        android:ems="10"
+        android:fontFamily="@font/inter_medium"
+        android:hint="00.00"
+        android:inputType="numberDecimal"
+        android:paddingLeft="30dip"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="$"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/inputAmount"
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="DATE"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/amount"
+        app:layout_constraintTop_toBottomOf="@+id/inputAmount" />
+
+    <ImageButton
+        android:id="@+id/calendarbutton"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/inputDate"
+        app:layout_constraintEnd_toEndOf="@+id/inputDate"
+        app:layout_constraintTop_toTopOf="@+id/inputDate"
+        app:srcCompat="@drawable/calendar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/addIncomeButton2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDate"
+        app:srcCompat="@drawable/border"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/TVSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

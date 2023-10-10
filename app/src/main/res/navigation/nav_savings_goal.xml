@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_savings_goal"
+    app:startDestination="@id/unlockQuotes">
+
+    <fragment
+        android:id="@+id/unlockQuotes"
+        android:name="com.example.dolfinloginsignup.UnlockQuotes"
+        android:label="fragment_unlock_quotes"
+        tools:layout="@layout/fragment_unlock_quotes" />
+    <activity
+        android:id="@+id/DestMotivationalQuote1"
+        android:name="com.example.dolfinloginsignup.MotivationalQuote1"
+        android:label="activity_motivational_quote1"
+        tools:layout="@layout/activity_motivational_quote1" />
+    <fragment
+        android:id="@+id/savingGoalDetailFragment2"
+        android:name="com.example.dolfinloginsignup.SavingGoalDetailFragment"
+        android:label="fragment_saving_goal_detail"
+        tools:layout="@layout/fragment_saving_goal_detail" >
+        <action
+            android:id="@+id/NextToAddSavings"
+            app:destination="@id/DestAddSavings" />
+    </fragment>
+    <activity
+        android:id="@+id/DestAddSavings"
+        android:name="com.example.dolfinloginsignup.AddSavingsFragment"
+        android:label="activity_add_savings"
+        tools:layout="@layout/activity_add_savings" />
+</navigation>

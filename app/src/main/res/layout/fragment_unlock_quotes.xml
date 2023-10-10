@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unlockQuote"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    style="@style/SCREEN"
+    tools:context=".UnlockQuotes">
+
+    <Button
+        android:id="@+id/BtnUnlockQuotes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#01498B"
+        android:fontFamily="@font/inter_semibold"
+        android:paddingLeft="90dp"
+        android:paddingTop="12dp"
+        android:paddingRight="90dp"
+        android:paddingBottom="12dp"
+        android:text="Unlock Quotes"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVClickBelow"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/TVCongratulation"
+        android:layout_width="269dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Congratulations on reaching your goal!"
+        android:textAlignment="center"
+        android:textColor="#004689"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/firecracker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVClickBelow"
+        android:layout_width="278dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:text="Click below to unlock your personalized motivational quotes."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVCongratulation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

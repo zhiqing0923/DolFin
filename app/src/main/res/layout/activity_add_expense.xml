@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="530dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#00000000"
+        android:backgroundTint="#00018DB9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backarrow" />
+
+    <ImageView
+        android:id="@+id/background3"
+        android:layout_width="424dp"
+        android:layout_height="708dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@drawable/rectangle2" />
+
+    <TextView
+        android:id="@+id/border4"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        style="@style/TEXT"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVdate" />
+
+    <TextView
+        android:id="@+id/border3"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:text="Add Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVamount" />
+
+    <TextView
+        android:id="@+id/border1"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVcategory" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVcategory" />
+
+    <TextView
+        android:id="@+id/TVcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="CATEGORY"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/TVname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="NAME"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/border1" />
+
+    <TextView
+        android:id="@+id/TVamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="AMOUNT"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/ETname" />
+
+    <TextView
+        android:id="@+id/TVdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="DATE"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/border3" />
+
+    <TextView
+        android:id="@+id/TVinvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="INVOICE"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/border4" />
+
+    <EditText
+        android:id="@+id/ETamount"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVamount" />
+
+    <TextView
+        android:id="@+id/border2"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:text="Add Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVname" />
+
+    <EditText
+        android:id="@+id/ETdate"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:drawableRight="@drawable/calendar"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVdate" />
+
+    <Button
+        android:id="@+id/BtnAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BUTTON"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="Add Expense"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IBAddInvoice"
+        app:strokeColor="#015794" />
+
+    <TextView
+        android:id="@+id/TVaddexpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Add Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETname"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/background3"
+        app:layout_constraintTop_toBottomOf="@+id/TVname"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/border6"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        style="@style/TEXT"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IBAddInvoice" />
+
+    <ImageView
+        android:id="@+id/IVbottom"
+        android:layout_width="413dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomnavigation" />
+
+    <ImageButton
+        android:id="@+id/IBhomepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homepage" />
+
+    <ImageButton
+        android:id="@+id/IBchart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IBhomepage"
+        app:srcCompat="@drawable/barchart" />
+
+    <ImageButton
+        android:id="@+id/IBuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/IBwallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IBuser"
+        app:srcCompat="@drawable/whitewallet" />
+
+    <ImageButton
+        android:id="@+id/IBAddInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVinvoice"
+        app:srcCompat="@drawable/addinvoice" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
